@@ -1,10 +1,6 @@
 import { model, Schema } from 'mongoose';
 
-const studentSchema = new Schema({
-    id: {
-        type: Number,
-    },
-    
+const studentSchema = new Schema({ 
     name: {
         type: String,
         required: true,

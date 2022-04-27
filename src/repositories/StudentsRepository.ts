@@ -12,7 +12,15 @@ class StudentsRepository {
         const students = await UserModel.create(student);
 
         return students;
-    }
+    };
+
+    async deleteStudent(id: string) {
+        const student_deleted = await UserModel.findOneAndDelete(
+            { where: { _id: id } }
+        )
+
+        return student_deleted;
+    };
 };
 
 export default new StudentsRepository();
