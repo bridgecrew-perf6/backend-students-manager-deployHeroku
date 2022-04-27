@@ -1,5 +1,5 @@
 export class Student {
-    public readonly _id!: number;
+    public readonly _id!: string;
 
     public name!: string;
     public email!: string;

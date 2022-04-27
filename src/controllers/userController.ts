@@ -23,7 +23,7 @@ class UserController {
     async destroy(req: Request, res: Response) {
         const { id } = req.params;
 
-        const student_deleted = await deleteStudentService(Number(id));
+        const student_deleted = await deleteStudentService(id);
 
         return res.json({ student_deleted });
     }

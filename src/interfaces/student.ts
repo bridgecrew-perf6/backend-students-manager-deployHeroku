@@ -1,5 +1,5 @@
 export default interface IStudent {
-    _id?: number,
+    _id?: string,
     name: string,
     email: string,
     cpf: string,
